@@ -8,7 +8,7 @@ public class Main {
 		Scanner scanner = new Scanner(System.in);
 
 		while (op != 'c') {
-		System.out.print("Insira operação a ser feita [+-/*]: ");
+		System.out.print("Insira operação a ser feita [+-/*p]: ");
 		op = scanner.next().charAt(0);
 		scanner.nextLine();
 		System.out.print("Insira número 1: ");
@@ -28,6 +28,9 @@ public class Main {
 				case '/':
 					resultado = a / b;
 					break;
+                case 'p':
+                    resultado = a ** b;
+                    break;
 				default:
 					resultado = 0;
 					System.out.println("Operação inválida");
